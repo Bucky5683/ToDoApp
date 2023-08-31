@@ -17,6 +17,13 @@
 		EB36BD182AA0604A008781AA /* ToDoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36BD172AA0604A008781AA /* ToDoAppTests.swift */; };
 		EB36BD222AA0604A008781AA /* ToDoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36BD212AA0604A008781AA /* ToDoAppUITests.swift */; };
 		EB36BD242AA0604A008781AA /* ToDoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36BD232AA0604A008781AA /* ToDoAppUITestsLaunchTests.swift */; };
+		EB36BD322AA061A7008781AA /* MemoData+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36BD302AA061A7008781AA /* MemoData+CoreDataClass.swift */; };
+		EB36BD332AA061A7008781AA /* MemoData+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36BD312AA061A7008781AA /* MemoData+CoreDataProperties.swift */; };
+		EB36BD382AA0633B008781AA /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36BD372AA0633B008781AA /* CoreDataManager.swift */; };
+		EB36BD3A2AA088FB008781AA /* ToDoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36BD392AA088FB008781AA /* ToDoCell.swift */; };
+		EB36BD3C2AA0891C008781AA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB36BD3B2AA0891C008781AA /* DetailViewController.swift */; };
+		EB6DDB9C2AA08F9500AD284E /* MyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDB9B2AA08F9500AD284E /* MyColor.swift */; };
+		EB6DDB9E2AA08FEA00AD284E /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6DDB9D2AA08FEA00AD284E /* UIColor+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +58,13 @@
 		EB36BD1D2AA0604A008781AA /* ToDoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB36BD212AA0604A008781AA /* ToDoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppUITests.swift; sourceTree = "<group>"; };
 		EB36BD232AA0604A008781AA /* ToDoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EB36BD302AA061A7008781AA /* MemoData+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MemoData+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EB36BD312AA061A7008781AA /* MemoData+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MemoData+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EB36BD372AA0633B008781AA /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		EB36BD392AA088FB008781AA /* ToDoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoCell.swift; sourceTree = "<group>"; };
+		EB36BD3B2AA0891C008781AA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		EB6DDB9B2AA08F9500AD284E /* MyColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyColor.swift; sourceTree = "<group>"; };
+		EB6DDB9D2AA08FEA00AD284E /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +117,10 @@
 			children = (
 				EB36BCFD2AA06045008781AA /* AppDelegate.swift */,
 				EB36BCFF2AA06045008781AA /* SceneDelegate.swift */,
-				EB36BD012AA06045008781AA /* ViewController.swift */,
+				EB6DDB9A2AA08F7D00AD284E /* Helpers */,
+				EB36BD362AA06272008781AA /* Controllers */,
+				EB36BD352AA0626A008781AA /* Views */,
+				EB36BD342AA0625E008781AA /* Models */,
 				EB36BD032AA06045008781AA /* Main.storyboard */,
 				EB36BD092AA0604A008781AA /* Assets.xcassets */,
 				EB36BD0B2AA0604A008781AA /* LaunchScreen.storyboard */,
@@ -128,6 +145,42 @@
 				EB36BD232AA0604A008781AA /* ToDoAppUITestsLaunchTests.swift */,
 			);
 			path = ToDoAppUITests;
+			sourceTree = "<group>";
+		};
+		EB36BD342AA0625E008781AA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EB36BD302AA061A7008781AA /* MemoData+CoreDataClass.swift */,
+				EB36BD312AA061A7008781AA /* MemoData+CoreDataProperties.swift */,
+				EB36BD372AA0633B008781AA /* CoreDataManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EB36BD352AA0626A008781AA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EB36BD392AA088FB008781AA /* ToDoCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EB36BD362AA06272008781AA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB36BD012AA06045008781AA /* ViewController.swift */,
+				EB36BD3B2AA0891C008781AA /* DetailViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EB6DDB9A2AA08F7D00AD284E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EB6DDB9B2AA08F9500AD284E /* MyColor.swift */,
+				EB6DDB9D2AA08FEA00AD284E /* UIColor+Extension.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +314,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB36BD3C2AA0891C008781AA /* DetailViewController.swift in Sources */,
 				EB36BD022AA06045008781AA /* ViewController.swift in Sources */,
+				EB36BD322AA061A7008781AA /* MemoData+CoreDataClass.swift in Sources */,
 				EB36BCFE2AA06045008781AA /* AppDelegate.swift in Sources */,
+				EB36BD332AA061A7008781AA /* MemoData+CoreDataProperties.swift in Sources */,
+				EB6DDB9C2AA08F9500AD284E /* MyColor.swift in Sources */,
 				EB36BD002AA06045008781AA /* SceneDelegate.swift in Sources */,
+				EB36BD382AA0633B008781AA /* CoreDataManager.swift in Sources */,
+				EB6DDB9E2AA08FEA00AD284E /* UIColor+Extension.swift in Sources */,
 				EB36BD082AA06045008781AA /* ToDoApp.xcdatamodeld in Sources */,
+				EB36BD3A2AA088FB008781AA /* ToDoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,8 +507,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -475,8 +535,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
